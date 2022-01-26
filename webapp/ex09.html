@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>자바스크립트</h1>
+</body>
+
+<script type="text/javascript">
+	
+	//실행(화면에 그리기전에 한바퀴 먼저돔)
+	testA();
+	
+	//이름있는함수(기명, 선언적 함수) > 정의부분이 먼저 해석된다.
+	//정의
+	function testA(){
+		console.log("testA() 함수실행")
+	}
+	
+	///////////////////////////////////////////////
+	
+	//이름없는함수(익명), 이름이 없으면 ㅅ사용할수 없으머ㅡ로  변수에 할당해야함
+	//정의
+	var testB = function(){
+		console.log("익명함수실행");
+	}
+	
+	//실행(변수이름으로 실행), 얘는  정의를 먼저해줘야함.. 
+	testB();
+	
+</script>
+
+</html>

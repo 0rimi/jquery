@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<h1>자바스트립스 예제</h1>
+	
+</body>
+
+<script type="text/javascript">
+	console.log("********변수선언********")
+	var no = 3;	//number
+	var str;	//String
+	var boo;	//boolean
+	
+	str = "안녕하세요";
+	
+	console.log(no);
+	console.log(str);
+	
+	console.log(typeof no);
+	console.log(typeof str);
+	console.log(typeof boo); //undefined
+	
+	boo = true;
+	
+	console.log(typeof boo); //boolean
+	
+	boo = "최수빈";
+	
+	console.log(boo);
+	console.log(typeof boo); //String, 변수에 뭘 넣느냐따라 달라짐
+	
+	var person = "최수빈";
+	var person = "최연준";	 //변수이름이 같아도 오류가 안나고 대체됨
+	
+	console.log(person);
+	
+</script>
+
+<script type="text/javascript">
+
+	console.log("********undefined 와 null비교********")
+	
+	var myVar1;
+	var myVar2 = null;
+	
+	console.log(myVar1);	//undefined
+	console.log(myVar2);	//null이라는 값
+	
+	console.log("123" == 123);	//true
+	console.log("123" === 123);	//false
+	
+	console.log(myVar1 == myVar2);	//true
+	console.log(myVar1 === myVar2); //false
+	
+	console.log("" == false);	//true
+	console.log("" == 0); 		//true
+	console.log(0 == false); 	//true
+
+</script>
+
+</html>
