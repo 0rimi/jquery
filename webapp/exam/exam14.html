@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<script type="text/javascript" src="/jquery/jquery/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="/jqueryex/jquery/jquery-1.12.4.js"></script>
 <title>Insert title here</title>
 </head>
 <body>
@@ -17,6 +17,29 @@
 
 </body>
 
-
+	<script type="text/javascript">
+		/*
+		$("li").on("click", function(){
+			var tag = $(this);  	//니가 방금 누른 li중 하나
+			var tagId = tag.attr("id");	//각 태그 속성중에 id값을 뽑아줌
+			console.log(tag.text());
+			console.log(tagId);
+			tag.html("<strong>TXT</strong>");
+		})
+		*/
+		$("li").on("click", function(){
+			console.log($(this).text());
+			console.log($(this).attr("id"));
+			$(this).html("<strong>TXT</strong>");
+		})
+		
+		/*
+		$("#first").on("click",function(){
+			var str = $("#first").text();
+			console.log(str);
+		});
+		*/
+	
+	</script>
 
 </html>

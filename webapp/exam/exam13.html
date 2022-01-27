@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<script type="text/javascript" src="/jquery/jquery/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="/jqueryex/jquery/jquery-1.12.4.js"></script>
 <title>Insert title here</title>
 </head>
 <body>
@@ -13,6 +13,12 @@
 
 </body>
 
-
+	<script type="text/javascript">
+			   //on(xx을할때(이벤트), 할일)
+		$("#btn").on("click", function(){
+			console.log("버튼클릭")
+			$("#display").html('<font color = "grey">최연준</font>');
+		});
+	</script>
 
 </html>

@@ -10,12 +10,30 @@
 	<ul>
 		<li id="first" class="red">첫번째 아이템입니다.</li>
 		<li id="second" class="blue"><strong>두번째 아이템입니다.</strong></li>
-		<li id="third" class="del">세번째아이템입니다.</li>
+		<li id="third" class="del">세번째 아이템입니다.</li>
 		<li><strong>네번째 아이템입니다.</strong></li>
-		
 	</ul>
+	
 	<input id="btn" type="button" VALUE="li요소추가" />
+	
 </body>
 
-
+	<script type="text/javascript">
+		$("ul").on("click","li", function(){ //이벤트 받는 ul, 실행은 li한테 시켜라
+			//console.log("클릭");
+			var tag = $(this);
+			console.log(tag.text());
+			tag.text("TXT");
+		});
+	</script>
+	
+	<script type="text/javascript">
+		$("#btn").on("click",function(){
+			$("ul").append("<li id='5'>다섯번째 아이템입니다</li>");
+			$("ul").append("<li id='6'>여섯번째 아이템입니다</li>");
+			$("ul").append("<li id='7'>일곱번째 아이템입니다</li>");
+			$("ul").append("<li id='8'>여덟번째 아이템입니다</li>");
+		});	
+	</script>
+	
 </html>
