@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>자바스크립트 연습</h1>
+</body>
+
+	<script type="text/javascript">
+		
+		//배열만들기(리스트)
+		var personList = [];
+		
+		//최수빈
+		var person01 = {
+			no : 1,
+			name : "최수빈",
+			hp : "010-2000-1205",
+			company : "02-2019-0304"
+		};
+		console.log(person01);
+		
+		//최연준
+		var person02 = {};
+		person02.no = 2;
+		person02.name = "최연준";
+		person02.hp = "010-1999-0913";
+		person02.company = "02-2019-0304";
+		console.log(person02);
+		
+		//최범규
+		var person03 = {
+			no : 3,
+			name : "최범규",
+			hp : "010-2001-0313"
+		}
+		person03.company = "02-2019-0304";
+		console.log(person03);
+		
+		
+		//리스트 출력
+		//var personList = [person01, person02, person03];
+		personList.push(person01);
+		personList.push(person02);
+		personList.push(person03);
+		
+		console.log(personList);
+		
+		
+		//for문 name만 출력
+		for(var i=0; i<personList.length; i++){
+			console.log(personList[i].name);
+		}
+		
+	</script>
+
+</html>

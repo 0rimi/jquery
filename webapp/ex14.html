@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>자바스크립트 예제</h1>
+</body>
+
+	<script type="text/javascript">
+		console.log("======객체======")
+		
+		var guestbookVo = {
+			no : 1,
+			name : "최수빈",
+			password : "20001205",
+			content : "안녕하세요. 투모로우바이투게더의 리더 수빈입니다.",
+			showInfo : function(){
+				console.log(this.no + "," + this.name + "," + this.password + "," + this.content)
+			},
+			sum : function(){return 12+9}
+		};
+		
+		console.log(guestbookVo);
+		
+		//getName 아니고
+		console.log(guestbookVo.name);
+		console.log(guestbookVo.sum());
+		
+		guestbookVo.regDate = "2019-03-04";
+		console.log(guestbookVo);
+		
+		////////////////////////////////
+		var personVo = {};
+		
+		personVo.no = 1;
+		personVo.name = "최수빈";
+		personVo.hp = "010-2000-1205";
+		personVo.company = "02-2019-0304";
+		
+		console.log(personVo);
+					
+		console.log(personVo["name"]);
+		
+	</script>
+	
+</html>

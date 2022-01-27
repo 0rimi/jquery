@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<div>
+		<button id="btn" type="button">js 테스트</button>
+		<h1 id="display">이름출력영역</h1>
+	</div>
+	
+</body>
+
+	<script type="text/javascript">
+		window.onload = function(){
+			
+			//html을 자바스크립트 객체화
+			var testButton = document.getElementById("btn");  //id가 btn인 버튼을 객체화
+			var testArea = document.getElementById("display"); //id가 display인 버튼을 객체화
+			
+			//버튼을 클릭했을때
+			testButton.onclick = function(){
+				console.log("버튼클릭")
+				//텍스트영역을 변경
+				testArea.innerHTML = "<font color='blue'>최수빈</font>";
+			};
+		}
+	</script>
+
+</html>
